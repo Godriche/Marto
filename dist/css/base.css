@@ -199,6 +199,7 @@
 
 .bio-resume h3 {
   color: wheat;
+  margin-top: 1.5rem;
   padding: .5rem;
   text-align: center;
 }
@@ -267,6 +268,7 @@
 .services {
   width: 100vw;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .services p {
@@ -462,13 +464,23 @@
 }
 
 @media screen and (max-width: 769px) {
-  .hamburger, .brand {
+  .hamburger,
+  .brand {
     background-color: black;
   }
   .contact-media {
     font-size: 1rem;
     font-weight: 500;
     width: 80vw;
+  }
+  main {
+    border-bottom: 2px solid wheat;
+  }
+  .social-media-icons {
+    width: 100%;
+  }
+  .social-media-icons .fa-2x {
+    font-size: 1.5em;
   }
 }
 

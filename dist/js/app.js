@@ -42,18 +42,3 @@ typewriter.typeString('Web Developer')
     .pauseFor(2500)
     .start();
 
-const canDo = document.querySelector('.services__can-do');
-
-const effectCan = new Typewriter(canDo, {
-  loop: true
-});
-
-effectCan.typeString('Can')
-    .pauseFor(1500)
-    .deleteChars(3)
-    .typeString("CAN'T")
-    .pauseFor(1500)
-    .deleteAll()
-    .pauseFor(50)
-    .start();
-

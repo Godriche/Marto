@@ -6,9 +6,10 @@
   .brand {
     top: 1.2rem;
     margin-left: 4rem;
-   z-index: 100;
+    z-index: 100;
   }
 
+  
   .nav {
     visibility: visible;
     background-color: rgba($primary-color, 0.5);
@@ -53,41 +54,57 @@
   }
 
   .projects {
-  
+
     &-list {
       grid-template-columns: repeat(3, 1fr);
     }
 
     &-desc {
-  
+
       a {
         margin: 1.5rem;
-      } 
-  
-    }
-    }
+      }
 
-    .contact {
-     &-media {
-       width: 60vw;
-     }
     }
+  }
 
-    .services {
+  .contact {
+    &-media {
       width: 60vw;
-      margin: 2rem auto 2rem auto;
     }
+  }
+
+  .services {
+    width: 60vw;
+    margin: 2rem auto 2rem auto;
+  }
 }
 
 @include mobile-screens {
- .hamburger , .brand {
-   background-color: black;
- }
 
- .contact-media {
-   font-size: 1rem;
-   font-weight: 500;
-   width: 80vw;
- }
+  .hamburger,
+  .brand {
+    background-color: black;
+  }
+
+  .contact-media {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80vw;
+  }
+
+  main{
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  .social-media-icons {
+    width: 100%;
+    
+
+    .fa-2x {
+      font-size: 1.5em;
+    }
+  }
+
 
 }
