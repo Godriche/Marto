@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: #0c0c0c;
+$secondary-color: wheat;
+
+
+// Functions
+
+@function textColor($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  }
+
+  @else {
+    @return #fff;
+  }
+}
+
+
+// Mixins
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin md-screens {
+  @media screen and (min-width: 769px) {
+    @content ;
+  }
+}
+
+@mixin mobile-screens {
+  @media screen and (max-width: 769px) {
+    @content ;
+  }
+}

@@ -1,0 +1,65 @@
+.bio {
+  width: 100vw;
+  // text-align: center;
+  margin: 0;
+  padding: 1.5rem;
+
+
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &-resume {
+
+    h3 {
+      color: $secondary-color;
+      padding: .5rem;
+      text-align: center;
+    }
+
+    &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 6rem;
+      padding-bottom: .3rem;
+    }
+
+    &__dojo {
+      background-color: $secondary-color;
+      height: 100%;
+      width: 5rem;
+      font-weight: bold;
+      padding: .3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: .5rem;
+      color: $primary-color;
+
+    }
+
+    &__info {
+      margin-left:  .5rem;
+      border: 1px solid $secondary-color;
+      height: 100%;
+      width: 15rem;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+
+      p:nth-child(odd) {
+        font-weight: 700;
+        font-style: italic;
+        color: $secondary-color;
+      }
+    }
+
+  }
+}

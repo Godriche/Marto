@@ -1,0 +1,41 @@
+.landing {
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 17vh;
+  background: url(/images/nhu-nguyen-kr-jmsASg8M-unsplash.jpg) center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &-info {
+    margin: 1rem 0;
+
+
+    &h1,
+    h3,
+    h5 {
+      margin: 1rem;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.skill {
+  color: $secondary-color;
+}
+
+.small-img {
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  border: 5px solid textColor($primary-color);
+  width: 150px;
+  height: 150px;
+}
+
+.social-media-icons a {
+  margin: .6rem;
+}

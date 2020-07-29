@@ -1,0 +1,26 @@
+.contact {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+
+  &-media {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: $secondary-color;
+    color: $primary-color;
+    width: 60vw;
+    margin: 1rem auto 1rem auto;
+    overflow: hidden;
+
+    p {
+      padding: .5rem;
+      word-wrap: break-word;
+    }
+  }
+
+  .social-media-icons {
+    margin-top: 1rem;
+    width: 103%;
+  }
+  
+}

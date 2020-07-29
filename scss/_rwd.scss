@@ -1,0 +1,93 @@
+@include md-screens {
+  .hamburger {
+    visibility: hidden;
+  }
+
+  .brand {
+    top: 1.2rem;
+    margin-left: 4rem;
+   z-index: 100;
+  }
+
+  .nav {
+    visibility: visible;
+    background-color: rgba($primary-color, 0.5);
+
+    &-list {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      width: 95%;
+      text-align: right;
+      background: transparent;
+
+
+      &__items {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .bio {
+    width: 80vw;
+    margin: 2rem auto 2rem auto;
+    border: 5px solid $secondary-color;
+    box-shadow: 10px 10px;
+
+    &-resume__dojo {
+      width: 10rem;
+    }
+
+    &-resume__info {
+      width: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .projects {
+  
+    &-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-desc {
+  
+      a {
+        margin: 1.5rem;
+      } 
+  
+    }
+    }
+
+    .contact {
+     &-media {
+       width: 60vw;
+     }
+    }
+
+    .services {
+      width: 60vw;
+      margin: 2rem auto 2rem auto;
+    }
+}
+
+@include mobile-screens {
+ .hamburger , .brand {
+   background-color: black;
+ }
+
+ .contact-media {
+   font-size: 1rem;
+   font-weight: 500;
+   width: 80vw;
+ }
+
+}
